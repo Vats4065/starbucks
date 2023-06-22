@@ -30,7 +30,7 @@
             <a href="index.html" class="nav-link ">Home</a>
           </li>
           <li class="nav-item active px-4">
-            <a href="items.html"  class="nav-link">Items</a>
+            <a href="items.html" class="nav-link">Items</a>
           </li>
           <li class="nav-item px-4">
             <a href="order.html" class="nav-link">Order</a>
@@ -53,3 +53,65 @@
       </div>
     </div>
   </header>
+
+
+  <!-- login modal -->
+  <div class="modal fade" id="pay" data-bs-backdrop="static">
+    <div class="modal-dialog  modal-lg modal-dialog-centered">
+      <div class="modal-content p-3 border-0 rounded-5">
+        <div class="modal-header d-block text-end border-0">
+          <a href="#" data-bs-dismiss="modal" class="text-decoration-none  text-primary fw-bold">SKIP</a>
+        </div>
+        <div class="modal-body">
+          <h2 class="fw-bold text-primary">Login</h2>
+          <form action="">
+            <label for="" class="form-label">Username:</label>
+            <input type="text" id="" placeholder="Enter Email ID or Mobile number*"
+              class="form-control mb-3 border-0 border-bottom rounded-0 ps-0">
+            <label for="" class="form-label">Password:</label>
+            <input type="password" placeholder="Enter password*"
+              class="form-control border-0 border-bottom rounded-0 ps-0">
+            <p class="form-text">Don't have an account? <a href="#" class="text-success" data-bs-target="#signup"
+                data-bs-toggle="modal">Sign Up</a></p>
+            <button class="btn btn-secondary w-50 mx-auto d-block mt-4 rounded-pill" id="loginbtn">Login</button>
+            <p class="form-text text-center pt-3">Facing trouble logging in? <a href="#" class="text-success">Get
+                Help</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- signup modal -->
+
+  <div class="modal fade" id="signup" data-bs-backdrop="static">
+    <div class="modal-dialog  modal-lg modal-dialog-centered">
+      <div class="modal-content p-3 border-0 rounded-5">
+        <div class="modal-header d-block text-end border-0">
+          <a href="#" data-bs-dismiss="modal" class="text-decoration-none  text-primary fw-bold">SKIP</a>
+        </div>
+        <div class="modal-body">
+          <h2 class="fw-bold text-primary">SignUp</h2>
+          <form action="">
+            <label for="" class="form-label">Email</label>
+            <input type="text" id="email" placeholder="Enter Email ID or Mobile number*"
+              class="form-control mb-3 border-0 border-bottom rounded-0 ps-0">
+            <label for="" class="form-label">Password:</label>
+            <input type="password" id="paswd" placeholder="Enter password*"
+              class="form-control border-0 border-bottom rounded-0 ps-0">
+            <p class="form-text">Alredy have Account? <a href="#" class="text-success" data-bs-target="#pay"
+                data-bs-toggle="modal">Login</a></p>
+            <button class="btn btn-secondary w-50 mx-auto d-block mt-4 rounded-pill" id="loginbtn">SignUp</button>
+            <p class="form-text text-center pt-3">Facing trouble logging in? <a href="#" class="text-success">Get
+                Help</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+</body>
+
+</html>
