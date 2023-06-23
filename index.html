@@ -117,7 +117,7 @@
   <section class="bg-web py-5">
     <div class="container">
       <h3 class="text-primary fw-bolder">Barista Recommends</h3>
-      <div class="swiper mySwiper">
+      <div class="swiper swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="card p-3" style="max-width: 540px">
@@ -600,14 +600,17 @@
   <script src="js/swiper-bundle.min.js"></script>
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      freeMode: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
+      slidesPerView: 3,
+      spaceBetween: 5,
+      autoplay: true,
+      autoplayTimeout: 2000,
+    
+      centeredSlides: true,
     });
   </script>
 </body>
