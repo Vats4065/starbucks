@@ -276,8 +276,6 @@ items = [
             description: "An all white mug with the classic iconic siren logo with an ...",
             price: "₹ 600.00"
         },
-
-
-
     ]
 ]
+
