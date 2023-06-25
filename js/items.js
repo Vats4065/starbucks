@@ -1,5 +1,5 @@
 
-let item = [
+let item=[
     {
         id: 1,
         img: "https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/100501.jpg",
@@ -292,20 +292,21 @@ let ui = (item) => {
         let btn = document.getElementById("button");
         btn.innerHTML = "Add Item";
         let div = document.createElement("div");
-        // btn.addEventListener("click", () => {
-        //     let cart = JSON.parse(localStorage.getItem("cart")) || [];
-        //     let existing = false;
-        //     cart.map((item, idx) => {
-        //         if (item.id == e.id) {
-        //             existing = true;
-        //             cart[idx].qty += 1;
-        //         }
-        //     });
-        //     if (!existing) {
-        //         cart.push({ ...e, qty: 1 });
-        //         alert("peroduct has been added successfully");
-        //     }
-        // });
+        btn.addEventListener("click", () => {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let existing = false;
+            cart.map((item, idx) => {
+                if (item.id == e.id) {
+                    existing = true;
+                    cart[idx].qty += 1;
+                }
+            });
+            if (!existing) {
+                cart.push({ ...e, qty: 1 });
+                alert("peroduct has been added successfully");
+                localStorage.setItem("cart", JSON.stringify(cart));
+            }
+        });
 
         div.append(img, name, desc, price, btn);
         div.setAttribute("class", "item-box");
@@ -313,8 +314,5 @@ let ui = (item) => {
         div2.append(div);
         div2.setAttribute("class", "item");
         document.querySelector(".box-2").appendChild(div2);
-    localStorage.setItem("cart", JSON.stringify(item));
     });
-
-console.log("hii");
 };
