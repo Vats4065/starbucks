@@ -134,7 +134,7 @@ header .nav-item.active .nav-link {
 
 .swiper-button-prev,
 .swiper-button-next {
-  /* background-image: url(../img/swiperbtnleft.22de7f3e8db5d523.svg); */
+  background-image: url(../img/swiperbtnleft.22de7f3e8db5d523.svg); 
   width: 80px;
   height: 80px;
   background-size: cover;
@@ -144,7 +144,7 @@ header .nav-item.active .nav-link {
 }
 
 .swiper-button-next {
-  /* background-image: url(../img/swiperbtnright.cbc1d309941ecd98.svg); */
+   background-image: url(../img/swiperbtnright.cbc1d309941ecd98.svg); 
 }
 
 .order-card {
