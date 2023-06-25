@@ -124,21 +124,21 @@
               <div class="row g-0">
                 <div class="col-md-4">
                   <div class="recommed-img-box">
-                    <img src="img/Bestseller.jpg" class="img-fluid rounded-start" alt="..." />
+                    <img src="img/CoffeeAtHome.jpg" class="img-fluid rounded-start" alt="..." />
                   </div>
                 </div>
                 <div class="col-md-8">
                   <div class="card-body p-0">
                     <img src="img/veg.svg" alt="" />
                     <h4 class="card-title font-20 fw-bold m-0">
-                      Java Chip Frappuccino
+                      Expresso Bean
                     </h4>
-                    <h5 class="font-14">TALL(354 ML).392 kcal</h5>
+                    <h5 class="font-14"> The Best Coffee Beans for Espresso & Cappuccino</h5>
                   </div>
                 </div>
               </div>
               <div class="hstack justify-content-between">
-                <h2 class="font-20 fw-bold pt-3">$35.52</h2>
+                <h2 class="font-20 fw-bold pt-3">$40.25</h2>
                 <button class="btn btn-primary rounded-pill addbtn py-1 px-4">
                   Add Item
                 </button>
@@ -164,7 +164,7 @@
                 </div>
               </div>
               <div class="hstack justify-content-between">
-                <h2 class="font-20 fw-bold pt-3">$35.52</h2>
+                <h2 class="font-20 fw-bold pt-3">$30.75</h2>
                 <button class="btn btn-primary rounded-pill addbtn py-1 px-4">
                   Add Item
                 </button>
@@ -254,21 +254,21 @@
               <div class="row g-0">
                 <div class="col-md-4">
                   <div class="recommed-img-box">
-                    <img src="img/Bestseller.jpg" class="img-fluid rounded-start" alt="..." />
+                    <img src="img/Food.jpg" class="img-fluid rounded-start" alt="..." />
                   </div>
                 </div>
                 <div class="col-md-8">
                   <div class="card-body p-0">
                     <img src="img/veg.svg" alt="" />
                     <h4 class="card-title font-20 fw-bold m-0">
-                      Cold Coffee
+                      Sandwich Avocado
                     </h4>
-                    <h5 class="font-14">TALL(354 ML).392 kcal</h5>
+                    <h5 class="font-14">Swiss Cheese, Avocado, Cheddar Cheese, Italian Bread,</h5>
                   </div>
                 </div>
               </div>
               <div class="hstack justify-content-between">
-                <h2 class="font-20 fw-bold pt-3">$35.52</h2>
+                <h2 class="font-20 fw-bold pt-3">$25.52</h2>
                 <button class="btn btn-primary rounded-pill addbtn py-1 px-4">
                   Add Item
                 </button>
@@ -280,7 +280,7 @@
               <div class="row g-0">
                 <div class="col-md-4">
                   <div class="recommed-img-box">
-                    <img src="img/Bestseller.jpg" class="img-fluid rounded-start" alt="..." />
+                    <img src="img/Drinks.jpg" class="img-fluid rounded-start" alt="..." />
                   </div>
                 </div>
                 <div class="col-md-8">
@@ -456,7 +456,7 @@
             <h2 class="fw-bold">How Starbucks Came To Be </h2>
             <p> From the first store in Pike Place Market, in 1971, Starbucks has expanded across 80 countries. Here’s
               how it all took shape.</p>
-            <button class="btn btn-light rounded-pill px-5 py-2">Learn More</button>
+            <button class="btn btn-light rounded-pill px-5 py-2 ">Learn More</button>
           </div>
         </div>
       </div>
@@ -627,14 +627,14 @@
           <h2 class="fw-bold text-primary">Login</h2>
           <form action="">
             <label for="" class="form-label">Username:</label>
-            <input type="text" id="" placeholder="Enter Email ID or Mobile number*"
+            <input type="text" id="lemail" placeholder="Enter Email ID or Mobile number*"
               class="form-control mb-3 border-0 border-bottom rounded-0 ps-0">
             <label for="" class="form-label">Password:</label>
-            <input type="password" placeholder="Enter password*"
+            <input type="password" id="paswd" placeholder="Enter password*"
               class="form-control border-0 border-bottom rounded-0 ps-0">
             <p class="form-text">Don't have an account? <a href="#" class="text-success" data-bs-target="#signup"
                 data-bs-toggle="modal">Sign Up</a></p>
-            <button class="btn btn-secondary w-50 mx-auto d-block mt-4 rounded-pill" id="loginbtn">Login</button>
+            <button class="btn btn-secondary w-50 mx-auto d-block mt-4 rounded-pill" id="submit">Login</button>
             <p class="form-text text-center pt-3">Facing trouble logging in? <a href="#" class="text-success">Get
                 Help</a></p>
           </form>
@@ -654,19 +654,22 @@
         </div>
         <div class="modal-body">
           <h2 class="fw-bold text-primary">SignUp</h2>
-          <form action="">
-            <label for="" class="form-label">Email</label>
-            <input type="text" id="email" placeholder="Enter Email ID or Mobile number*"
-              class="form-control mb-3 border-0 border-bottom rounded-0 ps-0">
+          <form  id="signup">
+            <label for="" class="form-label">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name"
+              class="form-control mb-2 border-0 border-bottom rounded-0 ps-0">
+            <label for="" class="form-label">Number:</label>
+            <input type="number" id="number" placeholder="Enter your number"
+              class="form-control mb-2 border-0 border-bottom rounded-0 ps-0">
+            <label for="" class="form-label">Email:</label>
+            <input type="email" id="email" placeholder="Enter Email ID"
+              class="form-control mb-2 border-0 border-bottom rounded-0 ps-0">
             <label for="" class="form-label">Password:</label>
-            <input type="password" id="paswd" placeholder="Enter password*"
-              class="form-control border-0 border-bottom rounded-0 ps-0">
-            <label for="" class="form-label">Confirm Password:</label>
-            <input type="password" id="cnpaswd" placeholder="Enter Confirm  password*"
+            <input type="password" id="password" placeholder="Enter password*"
               class="form-control border-0 border-bottom rounded-0 ps-0">
             <p class="form-text">Alredy have Account? <a href="#" class="text-success" data-bs-target="#pay"
                 data-bs-toggle="modal">Login</a></p>
-            <button class="btn btn-secondary w-50 mx-auto d-block mt-4 rounded-pill" id="loginbtn">SignUp</button>
+            <input class="btn btn-secondary w-50 mx-auto d-block mt-4 rounded-pill" type="submit" id="loginbtn" value="SignUp">
             <p class="form-text text-center pt-3">Facing trouble logging in? <a href="#" class="text-success">Get
                 Help</a></p>
           </form>
@@ -676,6 +679,8 @@
   </div>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="./js/signup.js"></script>
+  <script src="./js/login.js"></script>
   <!-- Initialize Swiper -->
 
   <script>
@@ -688,7 +693,9 @@
       spaceBetween: 5,
       autoplay: true,
       autoplayTimeout: 2000,
+
       loop: true,
+
       centeredSlides: true,
     });
   </script>

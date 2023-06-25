@@ -252,6 +252,7 @@
 
 
   <!-- login modal -->
+
   <div class="modal fade" id="pay" data-bs-backdrop="static">
     <div class="modal-dialog  modal-lg modal-dialog-centered">
       <div class="modal-content p-3 border-0 rounded-5">
@@ -262,6 +263,7 @@
           <h2 class="fw-bold text-primary">Login</h2>
           <form action="">
             <label for="" class="form-label">Username:</label>
+
             <input type="text" id="" placeholder="Enter Email ID or Mobile number*"
               class="form-control mb-3 border-0 border-bottom rounded-0 ps-0">
             <label for="" class="form-label">Password:</label>
@@ -270,6 +272,16 @@
             <p class="form-text">Don't have an account? <a href="#" class="text-success" data-bs-target="#signup"
                 data-bs-toggle="modal">Sign Up</a></p>
             <button class="btn btn-secondary w-50 mx-auto d-block mt-4 rounded-pill" id="loginbtn">Login</button>
+
+            <input type="text" id="lemail" placeholder="Enter Email ID or Mobile number*"
+              class="form-control mb-3 border-0 border-bottom rounded-0 ps-0">
+            <label for="" class="form-label">Password:</label>
+            <input type="password" id="paswd" placeholder="Enter password*"
+              class="form-control border-0 border-bottom rounded-0 ps-0">
+            <p class="form-text">Don't have an account? <a href="#" class="text-success" data-bs-target="#signup"
+                data-bs-toggle="modal">Sign Up</a></p>
+            <button class="btn btn-secondary w-50 mx-auto d-block mt-4 rounded-pill" id="submit">Login</button>
+
             <p class="form-text text-center pt-3">Facing trouble logging in? <a href="#" class="text-success">Get
                 Help</a></p>
           </form>
@@ -289,6 +301,7 @@
         </div>
         <div class="modal-body">
           <h2 class="fw-bold text-primary">SignUp</h2>
+
           <form action="">
             <label for="" class="form-label">Email</label>
             <input type="text" id="email" placeholder="Enter Email ID or Mobile number*"
@@ -299,6 +312,24 @@
             <p class="form-text">Alredy have Account? <a href="#" class="text-success" data-bs-target="#pay"
                 data-bs-toggle="modal">Login</a></p>
             <button class="btn btn-secondary w-50 mx-auto d-block mt-4 rounded-pill" id="loginbtn">SignUp</button>
+
+          <form id="signup">
+            <label for="" class="form-label">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name"
+              class="form-control mb-2 border-0 border-bottom rounded-0 ps-0">
+            <label for="" class="form-label">Number:</label>
+            <input type="number" id="number" placeholder="Enter your number"
+              class="form-control mb-2 border-0 border-bottom rounded-0 ps-0">
+            <label for="" class="form-label">Email:</label>
+            <input type="email" id="email" placeholder="Enter Email ID"
+              class="form-control mb-2 border-0 border-bottom rounded-0 ps-0">
+            <label for="" class="form-label">Password:</label>
+            <input type="password" id="password" placeholder="Enter password*"
+              class="form-control border-0 border-bottom rounded-0 ps-0">
+            <p class="form-text">Alredy have Account? <a href="#" class="text-success" data-bs-target="#pay"
+                data-bs-toggle="modal">Login</a></p>
+            <input class="btn btn-secondary w-50 mx-auto d-block mt-4 rounded-pill" type="submit" id="loginbtn"
+              value="SignUp">
             <p class="form-text text-center pt-3">Facing trouble logging in? <a href="#" class="text-success">Get
                 Help</a></p>
           </form>
@@ -308,6 +339,7 @@
   </div>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+<<<<<<< HEAD
   <script>
     var swiper = new Swiper('.swiper-container', {
       navigation: {
@@ -319,6 +351,12 @@
       centeredSlides: true,
     });
   </script>
+=======
+
+  <script src="./js/signup.js"></script>
+  <script src="./js/login.js"></script>
+
+>>>>>>> 34e09333b27c792eb1318fb1891c325e270eb421
 </body>
 
 </html>
