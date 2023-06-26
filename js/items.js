@@ -1,5 +1,5 @@
 
-let item=[
+let product = [
     {
         id: 1,
         img: "https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/100501.jpg",
@@ -274,45 +274,148 @@ let item=[
         price: "₹ 600.00"
     },
 
+    {
+        id: 35,
+        img: "https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/112590.jpg",
+        title: "Vegan Croissant Bun",
+        description: "A diced tomato & bocconccini salad with basil & olives on a...",
+        price: "₹ 388.50"
+    },
+
+    {
+        id: 36,
+        img: "https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/112591.jpg",
+        title: "Vegan Hummus Kebab Wrap",
+        description: "Relish a vegan kebab, green peas hummus and pickled carrots ...",
+        price: "₹ 388.50"
+    },
+
+    {
+        id: 37,
+        img: "https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/113946.jpg",
+        title: "Chatpata Paratha Wrap",
+        description: "Tangy paneer and vegetable filling wrapped in spinach parath..",
+        price: "₹ 341.25"
+    },
+
+    {
+        id: 38,
+        img: "https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/113942.jpg",
+        title: "Spiced Paneer Sandwich in Focaccia",
+        description: "Freshly Assembled Sandwich An Indian masala paneer with toma...",
+        price: "₹ 399.00"
+    },
+
+    {
+        id: 39,
+        img: "https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/100433.jpg",
+        title: "Caffe Americano",
+        description: "Rich in flavour, full-bodied espresso with hot water in true....",
+        price: "₹ 246.25"
+    },
+
+    {
+        id: 40,
+        img: "https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/100419.jpg",
+        title: "Cappuccino",
+        description: "Our signature rich in flavour espresso blended with delicate...",
+        price: "₹ 362.25"
+    },
+
+    {
+        id: 41,
+        img: "https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/113842.jpg",
+        title: "Belgium Chocolate Latte",
+        description: "Espresso with richly flavoured Belgium chocolate sauce, moch...",
+        price: "₹ 414.75"
+    },
+
+    {
+        id: 42,
+        img: "https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Small/113846.jpg",
+        title: "Iced Belgium Chocolate Latte",
+        description: "Espresso with richly flavoured Belgium chocolate sauce, moch...",
+        price: "₹ 446"
+    },
+
 ];
 
 
-let itemui = ``;
-let ui = (item) => {
-    console.log(item);
-    item.map((e) => {
+// let ui = ``;
+//     product.map((e) => {
+//         ui += ` <div class="swiper-slide">
+//     <div class="card p-3" style="max-width: 540px">
+//       <div class="row g-0">
+//         <div class="col-md-4">
+//           <div class="recommed-img-box">
+//             <img src="img/Bestseller.jpg" class="img-fluid rounded-start" alt="..." />
+//           </div>
+//         </div>
+//         <div class="col-md-8">
+//           <div class="card-body p-0">
+//             <img src="img/veg.svg" alt="" />
+//             <h4 class="card-title font-20 fw-bold m-0">
+//               Java Chip Frappuccino
+//             </h4>
+//             <h5 class="font-14">TALL(354 ML).392 kcal</h5>
+//           </div>
+//         </div>
+//       </div>
+//       <div class="hstack justify-content-between">
+//         <h2 class="font-20 fw-bold pt-3">$35.52</h2>
+//         <button class="btn btn-primary rounded-pill addbtn py-1 px-4">
+//           Add Item
+//         </button>
+//       </div>
+//     </div>
+//   </div>`
+//     }
+// )
+
+// document.querySelector(".swiper-wrapper").innerHTML = ui
+let ui = (product) => {
+    console.log(product);
+    product.map((e) => {
         let img = document.createElement("img");
         img.src = e.img;
+        img.setAttribute("class", "recommed-img-box")
         let name = document.createElement("h3");
         name.innerHTML = e.title;
+        name.setAttribute("class", "card-title font-20 fw-bold mt-4")
         let desc = document.createElement("p");
         desc.innerHTML = e.description;
-        let price = document.createElement("p");
+        desc.setAttribute("class","")
+        let price = document.createElement("h2");
         price.innerHTML = e.price;
-        let btn = document.getElementById("button");
-        btn.innerHTML = "Add Item";
         let div = document.createElement("div");
+
+        let btn = document.createElement("button");
+        btn.innerHTML = "Add Item";
         btn.addEventListener("click", () => {
             let cart = JSON.parse(localStorage.getItem("cart")) || [];
-            let existing = false;
+            let exsiting = false;
             cart.map((item, idx) => {
                 if (item.id == e.id) {
-                    existing = true;
+                    exsiting = true;
                     cart[idx].qty += 1;
                 }
             });
-            if (!existing) {
+            if (!exsiting) {
                 cart.push({ ...e, qty: 1 });
-                alert("peroduct has been added successfully");
-                localStorage.setItem("cart", JSON.stringify(cart));
+                alert("product has been added successfully");
             }
+            localStorage.setItem("cart", JSON.stringify(cart));
         });
 
+        btn.setAttribute("class", "btn btn-primary")
+
         div.append(img, name, desc, price, btn);
-        div.setAttribute("class", "item-box");
+        div.setAttribute("class", "product-box");
         let div2 = document.createElement("div");
         div2.append(div);
-        div2.setAttribute("class", "item");
+        div2.setAttribute("class", "product");
         document.querySelector(".box-2").appendChild(div2);
     });
 };
+
+ui(product);
