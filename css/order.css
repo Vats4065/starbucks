@@ -9,12 +9,19 @@
     
 }
 
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
 span{
     font-size: 30px;
 }
 
 #total{
-    font-size: 35px;
+    font-size: 30px;
     margin-top: 20px;
     text-transform: capitalize;
     font-weight: 500;

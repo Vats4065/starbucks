@@ -64,26 +64,28 @@ let cartui = (products) => {
                       ${product.title}
                     </h4>
                     <h5 class="font-14">${product.description}</h5>
+                    <div class="d-flex align-items-center">
                     <button class="btn btn-primary me-1" onclick="plus()">+</button>
                     <span class="fs-3" id="qty">${product.qty}</span><button class="btn btn-primary ms-2" onclick="minus()">-</button>
+                    </div>
                     </div>
                     
                 </div>
               </div>
-              <div class="hstack justify-content-between">
+              <div class="hstack">
                 <h2 class="font-20 fw-bold pt-3">${product.price}</h2>
               </div>
               </div>`
-            })
-          }
-          
-          cartui(cart);
-          let totalprice = 0;
-          for (let i = 0; i < cart.length; i++) {
-            totalprice += cart[i].price * cart[i].qty;
-          }
-          document.querySelector(".row").innerHTML = ui;
-          
+  })
+}
+
+let totalprice = 0;
+for (let i = 0; i < cart.length; i++) {
+  totalprice += cart[i].price * cart[i].qty;
+}
+cartui(cart);
+document.querySelector(".row").innerHTML = ui;
+
 
 
 document.getElementById("total").innerHTML = `total price : ${totalprice}`;
