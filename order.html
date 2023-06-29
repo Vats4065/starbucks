@@ -59,16 +59,16 @@
     <div class="tab-content bg-web" id="myTabContent">
         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
             tabindex="0">
-                <section class="py-5 ">
-                    <div class="container">
-                        
-                        <div class="row ">
-                            <!-- <div class="col-12 col-md-4">
-                                <div class="card p-3 order-card border-0" style="max-width: 540px"> -->
-                                    <!-- <dv class="row g-0"> -->
+            <section class="py-5 ">
+                <div class="container">
 
-                                        
-                                        <!-- <div class="col-md-4">
+                    <div class="row ">
+                        <!-- <div class="col-12 col-md-4">
+                                <div class="card p-3 order-card border-0" style="max-width: 540px"> -->
+                        <!-- <dv class="row g-0"> -->
+
+
+                        <!-- <div class="col-md-4">
                                             <div class="recommed-img-box">
                                                 <img src="img/Bestseller.jpg" class="img-fluid rounded-start" alt="..." />
                                             </div>
@@ -93,19 +93,19 @@
                                                 </button>
                                             </div>
                                         </div> -->
-                                    </div>
-                                    <h3 id="total"></h3>
-                                    <div class="btn-buy text-center">
-                                        <button class="btn btn-primary">Buy</button>
-                                    </div>
-                                </div>
-                            </div>
-                            
                     </div>
-                </section>
-
+                    <h3 id="total"></h3>
+                    <div class="btn-buy text-center">
+                        <button class="btn btn-primary">Buy</button>
+                    </div>
+                </div>
         </div>
-       
+
+    </div>
+    </section>
+
+    </div>
+
 
     <footer class="bg-primary py-5 mt-5">
         <div class="container">
@@ -249,20 +249,23 @@
                 </div>
                 <div class="modal-body">
                     <h2 class="fw-bold text-primary">SignUp</h2>
-                    <form action="">
-                        <label for="" class="form-label">Email</label>
-                        <input type="text" id="email" placeholder="Enter Email ID or Mobile number*"
-                            class="form-control mb-3 border-0 border-bottom rounded-0 ps-0">
+                    <form id="signup">
+                        <label for="" class="form-label">Name:</label>
+                        <input type="text" id="name" placeholder="Enter your name"
+                            class="form-control mb-2 border-0 border-bottom rounded-0 ps-0">
+                        <label for="" class="form-label">Number:</label>
+                        <input type="number" id="number" placeholder="Enter your number"
+                            class="form-control mb-2 border-0 border-bottom rounded-0 ps-0">
+                        <label for="" class="form-label">Email:</label>
+                        <input type="email" id="email" placeholder="Enter Email ID"
+                            class="form-control mb-2 border-0 border-bottom rounded-0 ps-0">
                         <label for="" class="form-label">Password:</label>
-                        <input type="password" id="paswd" placeholder="Enter password*"
-                            class="form-control border-0 border-bottom rounded-0 ps-0">
-                        <label for="" class="form-label">Confirm Password:</label>
-                        <input type="password" id="cnpaswd" placeholder="Enter Confirm  password*"
+                        <input type="password" id="password" placeholder="Enter password*"
                             class="form-control border-0 border-bottom rounded-0 ps-0">
                         <p class="form-text">Alredy have Account? <a href="#" class="text-success" data-bs-target="#pay"
                                 data-bs-toggle="modal">Login</a></p>
-                        <button class="btn btn-secondary w-50 mx-auto d-block mt-4 rounded-pill"
-                            id="loginbtn">SignUp</button>
+                        <input class="btn btn-secondary w-50 mx-auto d-block mt-4 rounded-pill" type="submit"
+                            id="loginbtn" value="SignUp">
                         <p class="form-text text-center pt-3">Facing trouble logging in? <a href="#"
                                 class="text-success">Get
                                 Help</a></p>
