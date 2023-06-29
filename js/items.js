@@ -341,38 +341,6 @@ let product = [
 ];
 
 
-// let ui = ``;
-//     product.map((e) => {
-//         ui += ` <div class="swiper-slide">
-//     <div class="card p-3" style="max-width: 540px">
-//       <div class="row g-0">
-//         <div class="col-md-4">
-//           <div class="recommed-img-box">
-//             <img src="img/Bestseller.jpg" class="img-fluid rounded-start" alt="..." />
-//           </div>
-//         </div>
-//         <div class="col-md-8">
-//           <div class="card-body p-0">
-//             <img src="img/veg.svg" alt="" />
-//             <h4 class="card-title font-20 fw-bold m-0">
-//               Java Chip Frappuccino
-//             </h4>
-//             <h5 class="font-14">TALL(354 ML).392 kcal</h5>
-//           </div>
-//         </div>
-//       </div>
-//       <div class="hstack justify-content-between">
-//         <h2 class="font-20 fw-bold pt-3">$35.52</h2>
-//         <button class="btn btn-primary rounded-pill addbtn py-1 px-4">
-//           Add Item
-//         </button>
-//       </div>
-//     </div>
-//   </div>`
-//     }
-// )
-
-// document.querySelector(".swiper-wrapper").innerHTML = ui
 let ui = (product) => {
     console.log(product);
     product.map((e) => {
